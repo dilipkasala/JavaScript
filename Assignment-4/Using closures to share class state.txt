@@ -1,0 +1,11 @@
+function Cat(name, weight) {
+  this.name =name;
+  this.weight = weight;
+
+}
+
+var cat1 = new Cat('garfiel', '');
+var cat2 = new Car('flite', 25);
+
+console.log(car1.name);console.log(car1.weight);
+console.log(car2.name);console.log(car2.weight);
