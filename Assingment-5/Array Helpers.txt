@@ -1,0 +1,56 @@
+Square of array -
+
+var numbers = [1,2,3,4,5];
+nu
+mbers.forEach(function(element, index, array)
+{
+array[index] = element* element;
+});
+
+
+console.log(numbers);
+-------------------------------------------------------------------------------
+Cubes of array -
+
+var numbers = [1,2,3,4,5];
+nu
+mbers.forEach(function(element, index, array)
+{
+array[index] = element* element*element;
+});
+
+
+console.log(numbers);
+----------------------------------------------------------------------------------
+Average of array
+
+var arr=[1,2,3,4,5]; 
+const average = arr => arr.reduce( ( p, c ) => p + c, 0 ) / arr.length;
+ 
+
+const result = average( arr ); 
+
+console.log(result);
+-----------------------------------------------------------------------------------
+sum of the array
+
+var arr=[1,2,3,4,5]; 
+var sum = 0;
+
+for(var i = 0; i < arr.length; i++) 
+ 
+sum += arr[i];
+console.log(sum)
+-----------------------------------------------------------------------
+return even number in the array
+
+const evennumbers = [1,2,3,4,].filter((number) => number%2==0);
+
+console.log(evennumbers);
+--------------------------------------------------------------------
+return odd numbers in the array
+
+const oddNumbers = [1,2,3,4,5].filter((number) => number%2!==0);
+
+console.log(oddNumbers);
+

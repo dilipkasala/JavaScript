@@ -1,0 +1,26 @@
+function santa(isSanta){
+if(isSanta.per1){
+return isSanta.person1.call(person);
+}
+if(isSanta2.per2){
+return isSanta2.person3.call(person2);
+}
+}
+var isSanta={
+per1:true,
+person1:function(){
+return true;
+}
+}
+var isSanta2={
+per2:true,
+person3:function(){
+return false;
+}
+}
+var person={
+firstName:true,
+}
+var person2 ={
+lastname:false,
+}

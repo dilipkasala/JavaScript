@@ -1,0 +1,26 @@
+function Greeting(name) {
+    this.name = name;
+}
+
+Greeting.prototype.greet = function() {
+    return "Hello, " + this.name;
+};
+Greeting.prototype.bye = function() {
+    return "bye, " + this.name;
+};
+
+
+var greeter = new Greeting ('Kelsey');
+
+greeter.greet();  // => "Hello, Kelsey" greeter.bye();
+
+var manual = Object.create(Greeting.prototype);
+Greeting.call(manual, 'Kelsey');
+
+var manual1 = Object.create(Greeting.prototype);
+Greeting.call(manual1, 'Kelsey');
+
+
+manual.greet();
+manual1.bye();
+
