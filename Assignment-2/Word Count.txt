@@ -1,0 +1,14 @@
+function WordCount(str) 
+{ 
+
+
+  return str.split(" ").length;
+
+
+}
+
+
+countWords("Hello");
+countWords("Hello, World!");
+countWords("No results for search term `s`");
+countWords(" Hello");

@@ -1,0 +1,48 @@
+let zero = (exp) => calc(0, exp);
+let one = (exp) => calc(1, exp);
+let two = (exp) => calc(2, exp);
+let three = (exp) => calc(3, exp);
+let four = (exp) => calc(4, exp);
+let five = (exp) => calc(5, exp);
+let six = (exp) => calc(6, exp);
+let seven = (exp) => calc(7, exp);
+let eight = (exp) => calc(8, exp);
+let nine = (exp) => calc(9, exp);
+
+let calc = (num, exp) => exp == undefined ? num : exp(num);
+
+function times(arg1)
+ {
+  return function(arg2) 
+{
+    return arg2 * arg1;
+  }
+}
+
+function dividedBy(arg1) 
+{
+  return function(arg2) 
+{
+    return arg2 / arg1;
+  }
+}
+function minus(arg1)
+ {
+  return function(arg2) 
+ {
+    return arg2 - arg1;
+  }
+}
+
+function plus(arg1) 
+{
+  return function(arg2) 
+{
+    return arg2 + arg1;
+  }
+}
+
+console.log(seven(times(five())));
+console.logtwo(plus(six())));
+console.log(nine(minus(four())));
+console.log(ten(divideBy(two())));
