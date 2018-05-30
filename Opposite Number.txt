@@ -1,0 +1,14 @@
+var num=3;
+
+var num2=-num;
+
+console.log(num2);
+
+
+or 
+
+
+function opposite(number) 
+{
+ return -number;
+}

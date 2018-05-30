@@ -1,0 +1,3 @@
+var myArray = ['h','o','l','a'];
+
+console.log('"'+ myArray.slice(0, myArray.length - 1).join(', ').concat(',' + myArray[myArray.length - 1]) + '"');
