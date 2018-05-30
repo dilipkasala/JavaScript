@@ -1,0 +1,7 @@
+function always (n) 
+{
+   var infunction =  function() 
+{ return n; 
+}
+   return infunction 
+}
